@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import LoginForm from '../components/LoginForm';
+import { Link } from 'react-router-dom';
 
 function Login() {
     return (
@@ -8,6 +9,9 @@ function Login() {
         Login
       </Typography>
       <LoginForm />
+      <Typography align='center'>
+        <Link to={"/register"}>Don't have account, go to register</Link>
+      </Typography>
     </>
   );
 }
