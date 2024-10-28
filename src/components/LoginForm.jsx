@@ -27,7 +27,7 @@ function LoginForm() {
         const errorData = await response.json();
         throw new Error(errorData.message || 'Login failed');
       } else {
-        navigate('/');
+        navigate('/home');
       }
     } catch (error) {
       setServerError(error.message);
